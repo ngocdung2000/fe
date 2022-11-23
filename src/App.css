@@ -1,38 +1,49 @@
-.App {
+h1 {
+  color: #fff;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 12px;
+  padding-left: 8px;
+  color: #808080;
+}
+thead > tr > th {
+  background-color: #36304a;
+  padding: 24px;
+  padding-left: 8px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+thead > tr:first-child th {
+  color: #fff;
+}
+tbody {
+  background-color: #fff;
+}
+th:first-child {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr > td:first-child {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr:hover {
+  background-color: #808080;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr:hover td {
+  color: #fff;
 }

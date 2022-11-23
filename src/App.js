@@ -7,7 +7,7 @@ function App() {
   React.useEffect(() => {
     (async () => {
       const resp = await (
-        await fetch('https://doantn-iot.herokuapp.com/api')
+        await fetch('https://dung-be.onrender.com/api')
       ).json();
       if (resp.resp) {
         setArr(resp.resp);
